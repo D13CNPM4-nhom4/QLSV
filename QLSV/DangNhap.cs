@@ -13,6 +13,7 @@ namespace QLSV
 {
     public partial class DangNhap : Form
     {
+		//form dang nhap
         public DangNhap()
         {
             InitializeComponent();
@@ -26,7 +27,6 @@ namespace QLSV
             form2.Show();
             this.Hide();
         }
-
         private void btn_login_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(conn);
