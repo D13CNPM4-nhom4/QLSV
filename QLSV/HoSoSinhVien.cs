@@ -36,7 +36,7 @@ namespace QLSV
     
         private void getlop()
         {
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from Lopp", con);
@@ -50,7 +50,7 @@ namespace QLSV
         }
         private void getkhoa()
         {
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from Khoa", con);
@@ -78,7 +78,7 @@ namespace QLSV
         void Hienthi()
         {
            
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * from SinhViennn", con);
@@ -90,7 +90,7 @@ namespace QLSV
         }
         public string Masinh()
         {
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
             string sql = @"select * from SinhViennn";
             SqlConnection con = new SqlConnection();
             con.ConnectionString = conn;
@@ -125,7 +125,7 @@ namespace QLSV
         {
             try
             {
-                String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+                String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
                 SqlConnection con = new SqlConnection(conn);
                 con.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO SinhViennn VALUES (@MaSV,@Hoten,@Anhhoso,@Ngaysinh,@Gioitinh,@Dantoc,@SDT,@CMND,@Email,@Hedaotao,@Hotenbo,@Nghebo,@Hotenme,@Ngheme,@Tentinh,@Malop,@Makhoa,@Tinhtrang,@NamNhapHoc)", con);
@@ -190,7 +190,7 @@ namespace QLSV
             try
             {
 
-                String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+                String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
                 SqlConnection con = new SqlConnection(conn);
                 con.Open();
                 SqlCommand cmd = new SqlCommand("UPDATE SinhViennn SET Hoten=@Hoten,Anhhoso=@Anhhoso,Ngaysinh=@Ngaysinh,Gioitinh=@Gioitinh,Dantoc=@Dantoc,SDT=@SDT,CMND=@CMND,Email=@Email,Hedaotao=@Hedaotao,Hotenbo=@Hotenbo,Nghebo=@Nghebo,Hotenme=@Hotenme,Ngheme=@Ngheme,Tentinh=@Tentinh,Makhoa=@Makhoa,Malop=@Malop,Tinhtrang=@Tinhtrang,NamNhapHoc=@NamNhapHoc where MaSV=@MaSV", con);
@@ -243,7 +243,7 @@ namespace QLSV
 
         private void btXoaSV_Click(object sender, EventArgs e)
         {
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True"";
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand("DELETE FROM SinhViennn where MaSV=@MaSV", con);
@@ -257,7 +257,7 @@ namespace QLSV
         private void btTimSV_Click(object sender, EventArgs e)
         {
             //txtTimKiem.Text = "";
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True"";
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM SinhViennn WHERE  MaSV=@MaSV ", con);
@@ -286,7 +286,7 @@ namespace QLSV
 
         private void btnhienthi_Click(object sender, EventArgs e)
         {
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * from SinhViennn", con);

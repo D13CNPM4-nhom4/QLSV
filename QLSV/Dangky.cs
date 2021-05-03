@@ -20,7 +20,7 @@ namespace QLSV
 
         private void btndangky_Click(object sender, EventArgs e)
         {
-            String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV2;Integrated Security=True";
+            String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
             SqlConnection con = new SqlConnection(conn);
             con.Open();
             SqlCommand cmd = new SqlCommand("Insert into CanBo(Username,Password,Hoten) values('" + txt_tk.Text + "','" + txt_mk.Text + "','"+txthoten.Text+"')", con);

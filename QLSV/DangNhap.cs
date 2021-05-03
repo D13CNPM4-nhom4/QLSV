@@ -17,7 +17,7 @@ namespace QLSV
         {
             InitializeComponent();
         }
-        String conn = @"Data Source=ADMIN-2N12AHLMA\SQLEXPRESS;Initial Catalog=QLSV4;Integrated Security=True";
+        String conn = @"Data Source=DUCDZ\SQLEXPRESS01;Initial Catalog=QLSV4;Integrated Security=True";
         
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
